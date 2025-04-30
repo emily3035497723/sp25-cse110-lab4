@@ -1,19 +1,7 @@
-function discountPrices(prices, discount) {
-    var discounted = [];
-    var finalPrice = 0;
-  
-    for (var i = 0; i < prices.length; i++) {
-      var discountedPrice = prices[i] * (1 - discount);
-      finalPrice = Math.round(discountedPrice * 100) / 100;
-      discounted.push(finalPrice);
-    }
-  
-    //console.log(i);
-    //console.log(discountedPrice);
-    console.log(finalPrice);
-    return discounted;
+function printNums() {
+    console.log(1);               // 立即執行
+    setTimeout(() => console.log(2), 1000); // 等 1 秒
+    setTimeout(() => console.log(3), 0);    // 理論上馬上執行，但還是放入「任務佇列」
+    console.log(4);               // 立即執行
   }
-  
-  discountPrices([100, 200, 300], 0.5);
-
-  console.log('3' - undefined);
+  printNums();
