@@ -23,7 +23,7 @@ Line 12 will print: **3**. length is defined and initialize at the beginning `co
 This will return **[50, 100, 150]**. Same as **4.**, even `discounted` is a `const` type, we still can push the value to the array in each for loop iteration with finalPrice, so we got [50, 100, 150]. However, we can't assign `discounted` to another array, we can only modify the element of it. 
 ### 12. 
 - A. student.name
-- B. student[Grad Year]
+- B. student['Grad Year']
 - C. student.greeting()
 - D. student['Favorite Teacher'].name
 - E. student.courseLoad[0]
@@ -34,7 +34,7 @@ This will return **[50, 100, 150]**. Same as **4.**, even `discounted` is a `con
 - D. Output "3null", because `+` change null into "null" and append it after 3, so "3" + "null" = "3null".
 - E. Output 4. true is 1 as interger, so we got 1 + 3 = 4.
 - F. Output 0. false and null are both 0, so we got 0 + 0 = 0
-- G. Output "3undefined". `+` change undefined into strings and append to '3' since '3' is a string, so we got '3' + "undefined" = "3Undefined".
+- G. Output "3undefined". `+` change undefined into strings and append to '3' since '3' is a string, so we got '3' + "undefined" = "3undefined".
 - H. Output NaN (Not-a-Number). This `-` suposed to do math calculation, but “undefined" is NaN, anything do any operation with NaN is NaN. 
 ### 14.  
 - A. True. The left hand side '2' change into 2, so 2 > 1 is true. 
